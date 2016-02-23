@@ -1,3 +1,33 @@
 // Place all the styles related to the static-pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	padding-top: 3%;
+}
+
+.projectName a,
+.navbar-inverse .navbar-nav>li>a {
+	text-decoration: none;
+	color: orange;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.projectName a:hover,
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: white;
+}
+
+.footer {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h1,
+.welcome {
+	text-align: center;
+}
+
+.metric {
+	margin: auto;
+	width: 70%;
+}
