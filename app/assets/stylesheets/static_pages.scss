@@ -30,8 +30,13 @@ body {
 }
 
 h1,
+h2,
 p {
 	text-align: center;
+}
+
+h2 {
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 .title {
@@ -42,4 +47,19 @@ p {
 .metric {
 	margin: auto;
 	width: 70%;
+}
+
+.carousel-img {
+	width: 600px;
+	height: auto;
+	margin: auto;
+}
+
+.carousel-caption {
+	color: ghostwhite;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: Futura, Helvetica, sans-serif;
+	font-size: 4.2em;
+	margin: auto;
+	padding-bottom: 20%;
 }
