@@ -8,14 +8,14 @@
             <span class="icon-bar"></span>
           </button>
           <div class="projectName navbar-brand">
-            <a href="<%= static_pages_index_url %>">VoVi</a>
+            <%= link_to "VoVi", static_pages_index_url %>
           </div><!--end projectname-->
         </nav><!--end nav header-->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="<%= static_pages_about_url %>">Our Story</a></li>
-            <li><a href="<%= products_url %>">Browse Records</a></li>
-            <li><a href="<%= static_pages_contact_url %>">Find Us</a></li>
+            <li><%= link_to "Our Story", static_pages_about_url %></li>
+            <li><%= link_to "Browse Records", products_url %></li>
+            <li><%= link_to "Location", static_pages_contact_url %></li>
           </ul>
         </div><!--end nav collapse-->
       </div><!--end nav container-fluid-->
