@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
       search_term = params[:q]
       if Rails.env.development?
         @products = Product.where("name LIKE ?", "%#{search_term}%")      
-      if Rails.env.production?
+      else
         @products = Product.where("name ilike ?", "%#{search_term}")
       end
     else
