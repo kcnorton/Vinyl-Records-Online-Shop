@@ -27,3 +27,18 @@ body {
   background-color: #efefef;
   text-align: center;
 }
+
+.field,
+.actions,
+.product-paths {
+	width: 20%;
+	height: auto;
+	margin: auto;
+}
+
+.product-form {
+	margin: auto;
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+}
