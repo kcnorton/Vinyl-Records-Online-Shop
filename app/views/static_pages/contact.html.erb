@@ -1,4 +1,28 @@
 <div class="container-fluid title">
-	<h1>Hey! How can I reach VoVi?</h1>
-	<p>Check things out in real life at our Reykjavik store just off Laugevegur.<br> E-mail us at voraciousvinyls@gmail.com</p>
+	<h1>Find Us</h1>
+	<p>Check things out in real life at our downtown Reykjavik location, just off Laugevegur.
 </div>
+
+	<h1>Contact Us</h1>
+
+	<%= flash[:notice] %>
+
+	<%= form_tag("/static_pages/thank_you") do %>
+	<div class="row contact-form">
+		<div class="col-md-4 contact-entry">
+			<div class="form-group">
+				<%= label_tag :name, "Name" %>
+				<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :email, "Email Address" %>
+				<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :message, "Message" %>
+				<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+			</div>
+				<%= submit_tag "Send" %>
+		</div>
+	</div>
+	<% end %>
