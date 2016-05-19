@@ -11,7 +11,7 @@ body {
 	padding-bottom: 40px;
 }
 
-.product_col:hover {
+.product:hover {
 	background-color: #f5f5f5;
 	opacity: 0.6;
 	filter: alpha(opacity=60);
@@ -41,4 +41,15 @@ body {
 	width: 100%;
 	height: auto;
 	padding-top: 20px;
+}
+
+.product_show {
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	padding-top: 3%;
+}
+
+.product_comment {
+	margin: 0 auto;
 }
