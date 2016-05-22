@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid product-show">
 
 <p id="notice"><%= notice %></p>
 
@@ -36,6 +36,8 @@
 		<h3><span class="glyphicon glyphicon-equalizer">Reviews</span></h3>
 		<%= render 'new_comment' %>
 		<%= render 'comments' %>
+
+		<%= will_paginate @comments %>
 	</div>
 </div>
 
