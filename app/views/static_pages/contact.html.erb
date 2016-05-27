@@ -8,8 +8,8 @@
 	<%= flash[:notice] %>
 
 	<%= form_tag("/static_pages/thank_you") do %>
-	<div class="row contact-form">
-		<div class="col-md-4 contact-entry">
+	<div class="row form-row">
+		<div class="col-xs-8 col-md-4 form-entry">
 			<div class="form-group">
 				<%= label_tag :name, "Name" %>
 				<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
