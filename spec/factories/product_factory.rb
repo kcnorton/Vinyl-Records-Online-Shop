@@ -9,7 +9,7 @@ FactoryGirl.define do
 	end
 
 	factory :comment do 
-				rating 
+				rating rand(1..5)
 				user
 				body "test comment"
 				product 
