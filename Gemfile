@@ -75,3 +75,5 @@ end
 gem 'devise'
 
 gem 'listen', '3.1.1'
+
+gem 'stripe'

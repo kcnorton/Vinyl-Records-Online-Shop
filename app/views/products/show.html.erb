@@ -28,6 +28,10 @@
 
 		<%= link_to 'Edit', edit_product_path(@product) %> |
 		<%= link_to 'Back', products_path %>
+
+		<%= form_tag "/payments/create" do %>
+  		<%= render 'shared/stripe_checkout_button' %>
+		<% end %>
 	</div>
 </div>
 
