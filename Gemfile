@@ -79,7 +79,7 @@ gem 'listen', '3.1.1'
 gem 'stripe'
 
 group :development do 
-  gem 'brakeman', :require => false
+  gem 'brakeman', :require => false 
 end
 
 # Brakeman
