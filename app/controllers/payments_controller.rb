@@ -9,7 +9,6 @@ class PaymentsController < ApplicationController
 		# Create the charge on Stripe's servers - this will charge the user's card
 		begin
 			charge = Stripe::Charge.create(
-				:amount => @product.price.to_i * 100, #amount in cents, again
 				:amount => (@product.price*100).to_i, #amount in cents, again
 				:currency => "usd",
 				:source => token,
@@ -18,8 +17,6 @@ class PaymentsController < ApplicationController
 			if charge.paid
 				Order.create(
 					:user_id => @user.id,
-					:product_id => @product.id,
-					:user_id => current_user.id,
 					:product_id => @product.id,
 					:total => @product.price
 					)
