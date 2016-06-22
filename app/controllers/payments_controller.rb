@@ -19,8 +19,8 @@ class PaymentsController < ApplicationController
 				Order.create(
 					:user_id => @user.id,
 					:product_id => @product.id,
-					:user_id => current_user.id
-					:product_id => @product.id
+					:user_id => current_user.id,
+					:product_id => @product.id,
 					:total => @product.price
 					)
 			end
