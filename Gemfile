@@ -91,3 +91,6 @@ end
 # multijson
 #gem cert --add <(curl -Ls https://raw.githubusercontent.com/intridea/multi_json/master/certs/rwz.pem)
 
+#AngularJS
+gem 'angularjs-rails'
+
