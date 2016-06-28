@@ -94,3 +94,6 @@ end
 #AngularJS
 gem 'angularjs-rails'
 
+#Memcache
+gem 'dalli'
+
