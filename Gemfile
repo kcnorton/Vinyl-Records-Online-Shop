@@ -94,3 +94,5 @@ end
 #AngularJS
 gem 'angularjs-rails'
 
+#Redis
+gem 'redis-rails'
