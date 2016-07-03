@@ -2,21 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html,
 body {
-	padding-top: 3%;
+	height: 100%;
+}
+
+body {
+	padding-top: 4%;
 	padding-bottom: 3%;
+}
+
+h1 {
+	padding-bottom: 3%;
+}
+
+.navbar {
+	background: white;
+	border-bottom: 5px solid #ecbd27;
 }
 
 .projectName a,
 .navbar-inverse .navbar-nav>li>a {
 	text-decoration: none;
-	color: orange;
+	color: black;
 	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.2em;
+	padding: 20px 15px;
 }
 
 .projectName a:hover,
 .navbar-inverse .navbar-nav>li>a:hover {
 	color: white;
+	text-decoration: none;
+	background-color: #ecbd27;
+}
+
+.projectName {
+padding-top: 20px;
 }
 
 .footer {
@@ -41,14 +63,24 @@ h2 {
 }
 
 .title {
-	margin: 0 auto;
 	padding-top: 25px;
 }
 
 .metric {
 	margin: 0 auto;
-	width: 70%;
+	width: 100%;
 	height: auto;
+}
+
+#bg {
+	background-image: image_url("redvinyl.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size:cover;
+	min-height: 100%;
+	min-width: 100%;
 }
 
 .carousel-img {
@@ -91,7 +123,6 @@ h2 {
 
 .burning {
 	color: black;
-	background: white;
 	letter-spacing: .25em;
 	font-weight: bold;
 }
