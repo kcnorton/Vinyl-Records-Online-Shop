@@ -1,15 +1,12 @@
-<div class="container-fluid title">
-	<h1>Find Us</h1>
-	<p>Check things out in real life at our downtown Reykjavik location, just off Laugevegur.
-</div>
-
+<div class="container title">
+	
 	<h1>Contact Us</h1>
 
 	<%= flash[:notice] %>
 
 	<%= form_tag("/static_pages/thank_you") do %>
 	<div class="row form-row">
-		<div class="col-xs-8 col-md-4 form-entry">
+		<div class="col-xs-12 col-md-4 form-entry">
 			<div class="form-group">
 				<%= label_tag :name, "Name" %>
 				<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
