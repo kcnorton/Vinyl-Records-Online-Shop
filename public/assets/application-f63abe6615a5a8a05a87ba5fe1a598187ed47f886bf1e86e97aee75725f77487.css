@@ -1,0 +1,451 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/raty.eot");
+  src: url("fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/raty.svg#raty") format("svg");
+  src: url("fonts/raty.ttf") format("truetype");
+  src: url("fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+@font-face {
+	font-family: Neon_Regular;
+	src: local("Neon_Regular"),
+		 url('../fonts/Neon_Regular.ttf');
+}
+
+@font-face {
+	font-family: Neon_Caps_Regular;
+	src: local("Neon_Caps_Regular"),
+		 url('../fonts/Neon_Caps_Regular.ttf');
+}
+
+*[data-neon] {
+	font-family: Neon_Regular;
+	font-size:60px;
+}
+
+*[data-neon='basic'], *[data-neon='custom'] span {
+	color: #fff;
+	text-shadow:0 0  .1em rgba(255, 255, 255, .6),
+				0 0  .6em rgba(255, 255, 255, .2),
+				0 0 1.2em rgba(255, 255, 255, .4),
+				0 0 1.8em rgba(255, 255, 255, .6),
+				0 0 2.4em rgba(255, 255, 255, .8),
+				.02em .02em  .1em rgba(0, 0, 0, 1);
+}
+
+.main-block {
+	text-align: center;
+}
+/* line 1, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/orders.scss */
+body {
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+/* line 6, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/orders.scss */
+.body {
+  min-height: 400px;
+  margin-bottom: 5%;
+}
+
+/* line 11, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/orders.scss */
+h1 {
+  padding-bottom: 3%;
+}
+
+/* line 15, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/orders.scss */
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* line 5, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+body {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* line 10, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.body {
+  min-height: 400px;
+  margin-bottom: 5%;
+}
+
+/* line 15, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+h1 {
+  padding-bottom: 3%;
+}
+
+/* line 19, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+#vinyls {
+  padding-left: 2%;
+  float: left;
+}
+
+/* line 24, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+#new,
+#edit {
+  padding-top: 3%;
+}
+
+/* line 29, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 34, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.product {
+  padding: 15px;
+}
+
+/* line 38, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.product:hover {
+  background-color: #f5f5f5;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+/* line 44, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.footer {
+  font-family: Verdana, Geneva, sans-serif;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+/* line 55, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.field,
+.actions {
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 61, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.product-paths {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+/* line 67, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.product-form {
+  width: 60%;
+  height: auto;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+/* line 74, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.product_show {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  padding-top: 3%;
+}
+
+/* line 81, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.product_comment {
+  margin: 0 auto;
+}
+
+/* line 85, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.rated {
+  text-align: center;
+}
+
+/* line 89, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+#price {
+  border-bottom: 2px solid #ecbd27;
+}
+
+/* line 93, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/products.scss */
+.product-show {
+  padding-top: 3%;
+}
+/* line 1, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.1em;
+}
+
+/* line 14, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 20, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 27, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 34, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 39, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 43, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 49, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 57, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 68, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 6, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+body {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* line 11, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.body {
+  min-height: 400px;
+  margin-bottom: 5%;
+}
+
+/* line 16, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  padding-bottom: 3%;
+}
+
+/* line 20, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.navbar {
+  background: white;
+  border-bottom: 5px solid #ecbd27;
+}
+
+/* line 25, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.projectName a,
+.navbar-inverse .navbar-nav > li > a {
+  text-decoration: none;
+  color: black;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.2em;
+  padding: 20px 15px;
+}
+
+/* line 34, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.projectName a:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #ecbd27;
+}
+
+/* line 41, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.projectName {
+  padding-top: 18px;
+}
+
+/* line 45, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.footer {
+  font-family: Verdana, Geneva, sans-serif;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #efefef;
+  text-align: center;
+}
+
+/* line 56, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+/* line 62, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+h2 {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* line 66, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.title {
+  padding-top: 25px;
+}
+
+/* line 70, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.metric {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+/* line 76, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+#bg {
+  background-image: url(/assets/redvinyl-3a9ef1336eb106807d89ad75141ef4615dace7466ffca286356f9184747558f4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* line 87, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.carousel-img {
+  width: 600px;
+  height: auto;
+  margin: auto;
+}
+
+/* line 93, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.carousel-caption {
+  color: ghostwhite;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: Futura, Helvetica, sans-serif;
+  font-size: 4.2em;
+  margin: auto;
+  padding-bottom: 20%;
+}
+
+/* line 102, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.form-row {
+  margin: auto;
+  width: 60%;
+  height: auto;
+  padding-top: 1%;
+}
+
+/* line 109, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.form-entry {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+/* line 115, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.auth-links {
+  margin: auto;
+  height: auto;
+  width: 20%;
+}
+
+/* line 121, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.padding {
+  padding-top: 25px;
+}
+
+/* line 125, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/static_pages.scss */
+.burning {
+  color: black;
+  letter-spacing: .25em;
+  font-weight: bold;
+}
+/* line 6, /Users/karanorton/Desktop/cfapp/app/assets/stylesheets/users.scss */
+.body {
+  min-height: 400px;
+  margin-bottom: 5%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+

@@ -21,6 +21,11 @@ h1 {
 	float: left;
 }
 
+#new,
+#edit {
+	padding-top: 3%;
+}
+
 .title {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -48,18 +53,22 @@ h1 {
 }
 
 .field,
-.actions,
-.product-paths {
-	width: 20%;
+.actions {
 	height: auto;
-	margin: auto;
+	margin: 0 auto;
+}
+
+.product-paths {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
 }
 
 .product-form {
-	margin: auto;
-	width: 100%;
+	width: 60%;
 	height: auto;
 	padding-top: 20px;
+	margin: 0 auto;
 }
 
 .product_show {
