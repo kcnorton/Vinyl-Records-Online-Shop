@@ -8,9 +8,15 @@ body {
 	padding-bottom: 5%;
 }
 
-.body {
+.title {
+	padding-top: 40px;
 	min-height: 400px;
   margin-bottom: 5%;
+}
+
+.notice,
+.alert {
+	margin-top: 50px;
 }
 
 h1 {
@@ -22,7 +28,20 @@ h1 {
 	border-bottom: 5px solid #ecbd27;
 }
 
-.projectName a,
+.icon-bar {
+	color: #ecbd27;
+}
+
+.navbar-brand {
+	text-decoration: none;
+	color: black;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.2em;
+	padding: 20px 15px;
+	margin-top: 0;
+}
+
+.navbar-brand a,
 .navbar-inverse .navbar-nav>li>a {
 	text-decoration: none;
 	color: black;
@@ -31,23 +50,19 @@ h1 {
 	padding: 20px 15px;
 }
 
-.projectName a:hover,
+.navbar-brand a:hover,
 .navbar-inverse .navbar-nav>li>a:hover {
 	color: white;
 	text-decoration: none;
 	background-color: #ecbd27;
 }
 
-.projectName {
-padding-top: 18px;
-}
-
 .footer {
 	font-family: Verdana, Geneva, sans-serif;
-	position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
+  position: fixed;
   padding: 1em;
   background-color: #efefef;
   text-align: center;
@@ -61,10 +76,6 @@ p {
 
 h2 {
 	font-family: Verdana, Geneva, sans-serif;
-}
-
-.title {
-	padding-top: 25px;
 }
 
 .metric {
