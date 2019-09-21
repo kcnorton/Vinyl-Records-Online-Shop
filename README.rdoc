@@ -1,3 +1,5 @@
 == README
 
 This README is created by Kara Norton, and it is dedicated to running her first web app.
+
+This is an ecommerce site running on ROR and deployed with Heroku.
