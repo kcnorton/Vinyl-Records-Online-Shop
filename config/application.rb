@@ -34,8 +34,5 @@ module Nameofapp
 
     # Redis
     config.cache_store = :redis_store, 'redis://localhost:6379/0/cache'
-
-    # Replace Zeitwerk code loader with the old classic
-    config.autoloader = :classic
   end
 end
