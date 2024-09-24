@@ -1,19 +1,21 @@
 source 'https://rubygems.org'
-ruby "3.3.5"
+# ruby "3.3.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0.rc1'
-gem 'railties', '5.2.2'
+gem 'rails', '~> 7.1'
+gem 'railties', '7.2.0.beta1'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-	gem 'sqlite3'
+  gem 'sqlite3'
+  # git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 5.0.0'
+gem 'coffee-rails', '~> 4.2.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -32,7 +34,7 @@ gem 'cancancan', '~> 1.10'
 # pagination
 gem 'will_paginate', '~> 3.1.0'
 
-gem 'webpacker', '~>3.0'
+# gem 'webpacker', '~>3.0'
 
 gem 'psych', '< 4'
 
@@ -59,20 +61,21 @@ group :development do
 
   gem 'guard'
 
+  # gem 'spork-rails'
+
   gem 'guard-rspec', require: false
 
   gem 'guard-spork'
-
 end
 
 group :production do
-	gem 'rails_12factor'
-	gem 'pg'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
-	gem 'rspec-rails', '~>3.4'
-  gem 'factory_girl_rails', '~> 4.0'
+  gem 'factory_bot_rails', '~> 4.0'
+  gem 'rspec-rails'
 end
 
 gem 'devise'
@@ -81,21 +84,23 @@ gem 'listen', '~> 3.9'
 
 gem 'stripe'
 
-group :development do 
-  gem 'brakeman', :require => false 
+group :development do
+  gem 'brakeman', require: false
 end
 
 # Brakeman
-#gem cert --add <(curl -Ls https://raw.github.com/presidentbeef/brakeman/master/brakeman-public_cert.pem)
+# gem cert --add <(curl -Ls https://raw.github.com/presidentbeef/brakeman/master/brakeman-public_cert.pem)
 
 # ruby_parser, etc.
-#gem cert --add <(curl -Ls http://www.zenspider.com/~ryan/gem-public_cert.pem)
+# gem cert --add <(curl -Ls http://www.zenspider.com/~ryan/gem-public_cert.pem)
 
 # multijson
-#gem cert --add <(curl -Ls https://raw.githubusercontent.com/intridea/multi_json/master/certs/rwz.pem)
+# gem cert --add <(curl -Ls https://raw.githubusercontent.com/intridea/multi_json/master/certs/rwz.pem)
 
-#AngularJS
+# AngularJS
 gem 'angularjs-rails'
 
-#Redis
+# Redis
 gem 'redis-rails'
+
+gem 'rubocop-rspec'
